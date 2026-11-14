@@ -27,3 +27,13 @@ function hitungJumlahTuntas(nilaiPraktik, batasTuntas) {
     }
     return jumlahTuntas;
 }
+
+function hitungJumlahBelumTuntas(nilaiPraktik, batasTuntas) {
+    jumlahBelumTuntas = 0;
+    for (i = 0; i < nilaiPraktik.length; i++) {
+        if (nilaiPraktik[i] < batasTuntas) {
+            jumlahBelumTuntas++;
+        }
+    }
+    return jumlahBelumTuntas;
+}
