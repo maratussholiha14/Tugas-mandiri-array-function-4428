@@ -30,6 +30,11 @@ function tampilkanBarang(daftarBarang) {
     return true;
 }
 
+function cariBarang(daftarBarang, namaBarang) {
+    let indeks = daftarBarang.indexOf(namaBarang);
+    return indeks;
+}
+
 
 
 
