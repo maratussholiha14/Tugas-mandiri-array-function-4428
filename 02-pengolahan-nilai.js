@@ -1,4 +1,4 @@
-const nilaiPraktik = [80, 70, 90, 65, 75, 85];
+const nilaiPraktik = [60, 65, 70, 80, 90];
 const batasTuntas = 75;
 
 function tampilkanNilai(nilaiPraktik) {
@@ -37,3 +37,13 @@ function hitungJumlahBelumTuntas(nilaiPraktik, batasTuntas) {
     }
     return jumlahBelumTuntas;
 }
+
+console.log("=== NILAI PRAKTIK SISWA ===");
+tampilkanNilai(nilaiPraktik);
+console.log("");
+
+console.log("=== REKAPITULASI ===");
+console.log("jumlah siswa:" + nilaiPraktik.length);
+console.log("nilai rata-rata:" + hitungRatarata(nilaiPraktik));
+console.log("jumlah tuntas:" + hitungJumlahTuntas(nilaiPraktik, batasTuntas));
+console.log("jumlah belum tuntas:" + hitungJumlahBelumTuntas(nilaiPraktik, batasTuntas));
