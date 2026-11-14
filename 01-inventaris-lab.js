@@ -35,6 +35,18 @@ function cariBarang(daftarBarang, namaBarang) {
     return indeks;
 }
 
+function hapusBarang(daftarBarang, namaBarang) {
+    if (daftarBarang.indexOf(namaBarang) === -1) {
+        console.log("Penghapusan gagal tanpa mengubah data");
+        return false;
+    }
+    daftarBarang.splice(daftarBarang.indexOf(namaBarang), 1);
+    console.log(namaBarang + " berhasil dihapus.");
+    return true;
+}
+
+
+
 
 
 
